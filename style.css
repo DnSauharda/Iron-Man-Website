@@ -1,0 +1,156 @@
+body{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+}
+/* Navigation */
+.navigation-text-links{
+    display: flex;
+    background-color: #ff2e2e;
+    justify-content: space-between;
+    align-items: center;
+}
+.navigation-heading{
+    display: flex;
+    color: white;
+    padding-left: 50px;
+    align-items: center;
+}
+.navigation-heading img{
+    height: 55px;
+    width: 40px;
+    padding-right: 10px;
+}
+.links{
+    list-style: none;
+    display: flex;
+    margin-right: 50px;
+}
+ul > li > a{
+    text-decoration: none;
+    color: white;
+    padding-left: 50px;
+    font-size: 20px;
+}
+/* Navigation End */
+/* All Marks/Suits */
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.container{
+    width: 870px;
+    color: #ff2e2e;
+    margin-top: 36px;
+    margin-bottom: 20px;
+    padding-bottom: 40px;
+    border-radius: 5px;
+    padding-left: 30px;
+    background-color: #ffffe6;
+}
+.marks-names{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-row-gap: 29px;
+}
+.mark{
+    display: flex;
+    align-items: center;
+    color: #ff2e2e;
+}
+.mark img{
+    width: 56px;
+    height: 56px;
+    padding-right: 16px;
+}
+hr{
+    margin: 30px 30px 30px 0px;
+    
+}
+/* All Marks/Suits End */
+/* Projects */
+.container-2{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-row-gap: 26px;
+}
+.project{
+    display: flex;
+}
+.thumbnail img{
+    width: 177px;
+    height: 117px;
+}
+.project-details{
+    font-size: 20px;
+    padding-left: 16px;
+}
+.project-details h3{
+    margin: 0;
+}
+.project-details p{
+    font-size: 16px;
+    color: black;
+}
+/* Projects End */
+/* The Kid(Spider-Man) */
+.container h2{
+    padding-top: 20px;
+}
+.suit{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+.box-shadow{
+    box-shadow: 1px 10px 500px rgba(0, 0, 0, 0.05);
+    width: 224px;
+    border-radius: 20px;
+    padding: 10px;
+}
+.spider-mark img{
+    width: 224px;
+    height: 106px;
+}
+.spider-info h3{
+    margin: 0;
+}
+.spider-info p{
+    color: #0F8EE9;
+    margin-top: 10px;
+}
+.allignment{
+    margin-bottom: 65px;
+}
+/* The Kid(Spider-Man) End */
+/* Footer */
+footer p{
+    margin: 0;
+    padding-top: 40px;
+    padding-bottom: 20px;
+    text-align: center;
+    color: white;
+    background-color: #ff2e2e;
+}
+/* Footer */
+@media only screen and (max-width: 690px) {
+    .navigation-text-links{
+        width: 100%;
+    }
+    .links>li:first-child{
+        display: none;
+    }
+    .container{
+        width: 60%;
+    }
+    .marks-names{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .container-2{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .suit{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
